@@ -15,17 +15,17 @@ const Hero = () => {
                         MADURAI BUN PAROTTA
                     </h1>
                     <LinkScroll className="mb-5" to="features" offset={-100} spy smooth>
-                        <Button icon="/images/zap.svg">menu</Button>
+                        <Button icon={import.meta.env.BASE_URL + "/images/zap.svg"}>menu</Button>
                     </LinkScroll>
                     <LinkScroll to="order" offset={-100} spy smooth>
-                        <Button icon="/images/zap.svg">Location</Button>
+                        <Button icon={import.meta.env.BASE_URL + "/images/zap.svg"}>Location</Button>
                     </LinkScroll>
                     
                 </div>
 
                 <div className='absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res'>
                     <img
-                        src="/clover.jpg"
+                        src="maduraibunparotta/clover.jpg"
                         className='size-1230 max-lg:h-auto'
                         alt='hero'
                     />
