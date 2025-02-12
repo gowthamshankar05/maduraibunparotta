@@ -7,7 +7,7 @@ const Hero = () => {
 
 
     const onClickMenu = () => {
-        window.open(import.meta.env.BASE_URL + '/menu.pdf', '_blank', 'noopener,noreferrer');
+        window.open('https://drive.google.com/file/d/1T7IT8DRPxifkRtyGfZCzSyz7kapEZH_6/view?usp=sharing', 'noopener,noreferrer');
     };
 
     const onClickLocation = ()=>{
