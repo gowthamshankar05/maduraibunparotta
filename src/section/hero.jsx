@@ -3,6 +3,17 @@ import { Element, Link as LinkScroll } from 'react-scroll'
 import Button from '../components/button'
 
 const Hero = () => {
+
+
+
+    const onClickMenu = () => {
+        window.open(import.meta.env.BASE_URL + '/menu.pdf', '_blank');
+    };
+
+    const onClickLocation = ()=>{
+        window.open('https://maps.app.goo.gl/EaRFQwjXubtqFkYZ7', '_blank');
+    }
+
   return (
     <section className='relative pt-36 pb-40 max-lg:pt-28 max-lg:pb-36 max-md:pt-24 max-md:pb-32'>
         <Element name="hero">
@@ -15,15 +26,15 @@ const Hero = () => {
                         MADURAI BUN PAROTTA
                     </h1>
                     <LinkScroll className="mb-5" to="features" offset={-100} spy smooth>
-                        <Button icon={import.meta.env.BASE_URL + "/images/zap.svg"}>menu</Button>
+                        <Button onClick={onClickMenu} icon={import.meta.env.BASE_URL + "/images/zap.svg"}>menu</Button>
                     </LinkScroll>
                     <LinkScroll to="order" offset={-100} spy smooth>
-                        <Button icon={import.meta.env.BASE_URL + "/images/zap.svg"}>Location</Button>
+                        <Button onClick={onClickLocation} icon={import.meta.env.BASE_URL + "/images/zap.svg"}>Location</Button>
                     </LinkScroll>
                     
                 </div>
 
-                <div className='absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res'>
+                <div className='absolute -top-32 left-[calc(50%-340px)] w-[1230px] max-md:w-[580px] pointer-events-none hero-img_res'>
                     <img
                         src={import.meta.env.BASE_URL + '/clover.jpg'}
                         className='size-1230 max-lg:h-auto'
