@@ -7,7 +7,7 @@ const Hero = () => {
 
 
     const onClickMenu = () => {
-        window.open(import.meta.env.BASE_URL + '/menu.pdf', '_blank');
+        window.open(import.meta.env.BASE_URL + '/menu.pdf', '_blank', 'noopener,noreferrer');
     };
 
     const onClickLocation = ()=>{
