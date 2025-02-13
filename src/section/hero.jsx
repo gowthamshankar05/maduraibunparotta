@@ -26,17 +26,17 @@ const Hero = () => {
                         MADURAI BUN PAROTTA
                     </h1>
                     <LinkScroll className="mb-5" to="features" offset={-100} spy smooth>
-                        <Button onClick={onClickMenu} icon={import.meta.env.BASE_URL + "/images/zap.svg"}>menu</Button>
+                        <Button onClick={onClickMenu} icon={"/images/zap.svg"}>menu</Button>
                     </LinkScroll>
                     <LinkScroll to="order" offset={-100} spy smooth>
-                        <Button onClick={onClickLocation} icon={import.meta.env.BASE_URL + "/images/zap.svg"}>Location</Button>
+                        <Button onClick={onClickLocation} icon={"/images/zap.svg"}>Location</Button>
                     </LinkScroll>
                     
                 </div>
 
                 <div className='absolute -top-32 left-[calc(50%-340px)] w-[1230px] max-md:w-[580px] pointer-events-none hero-img_res'>
                     <img
-                        src={import.meta.env.BASE_URL + '/clover.jpg'}
+                        src={'/clover.jpg'}
                         className='size-1230 max-lg:h-auto'
                         alt='hero'
                     />
