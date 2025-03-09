@@ -7,7 +7,7 @@ const Hero = () => {
 
 
     const onClickMenu = () => {
-        window.open('https://drive.google.com/file/d/1T7IT8DRPxifkRtyGfZCzSyz7kapEZH_6/view?usp=sharing', 'noopener,noreferrer');
+        window.open('https://drive.google.com/file/d/1hJobjrrpOipyMd14Y6jEbiT8KC877LRy/view?usp=drive_link', 'noopener,noreferrer');
     };
 
     const onClickLocation = ()=>{
